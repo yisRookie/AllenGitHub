@@ -1,0 +1,33 @@
+//
+//  BiggiFiVMG.pch
+//  BiggiFiVMG
+//
+//  Created by 峰 on 15/6/9.
+//  Copyright (c) 2015年 Allen. All rights reserved.
+//
+
+#ifndef BiggiFiVMG_BiggiFiVMG_pch
+#define BiggiFiVMG_BiggiFiVMG_pch
+#import "CoreSVP.h"
+#import "KeyCode.h"
+#import "FDAlertView.h"
+#import "BiggiFICategory.h"
+#import "AI3define.h"
+
+
+#define RGBA(R/*红*/, G/*绿*/, B/*蓝*/, A/*透明*/) \
+[UIColor colorWithRed:R/255.f green:G/255.f blue:B/255.f alpha:A]
+
+#define DEVICEHEIGH [[UIScreen mainScreen] bounds].size.height
+
+#define DEVICWIDTH  [[UIScreen mainScreen] bounds].size.width
+
+#define DDLog(xx, ...)  NSLog(@"%s(%d): " xx, __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__)
+
+#define WEAKOBJECT(obj,objName) typeof(obj) __weak objName = obj;
+
+#define WEAKSELF WEAKOBJECT(self,weakSelf);
+
+
+
+#endif
